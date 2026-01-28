@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect, useCallback, useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Lobby from './components/Lobby';
 import DrawingBoard from './components/DrawingBoard';
 import { GameState, Player, ChatMessage, Difficulty, GameWord } from './types';
@@ -350,6 +351,7 @@ const App: React.FC = () => {
 
         </div>
       )}
+      <Analytics />
     </div>
   );
 };
